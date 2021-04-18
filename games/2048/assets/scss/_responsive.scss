@@ -1,0 +1,86 @@
+@include _650 {
+   .game-over__title {
+      font-size: 85px;
+      text-shadow: -4px 2px 0.5vw #2356ff;
+   }
+   .game-over__score p {
+      font-size: 40px;
+      text-shadow: -2px 2px 0.4vw #ca006d;
+   }
+   .game-over__res {
+      font-size: 35px;
+   }
+}
+
+@include _480 {
+   .game-over__title {
+      font-size: 65px;
+      text-shadow: -4px 2px 0.5vw #2356ff;
+   }
+   .game-over__score p {
+      font-size: 35px;
+      text-shadow: -1px 1px 0.4vw #ca006d;
+   }
+   .game-over__res {
+      font-size: 30px;
+   }
+   .title__text {
+      font-size: 100px;
+   }
+   .info__block p {
+      font-size: 30px;
+   }
+   #block-size__inp {
+      font-size: 20px;
+   }
+   .block__btn {
+      font-size: 15px;
+   }
+   .game-score p {
+      font-size: 30px;
+   }
+   .canvas-gradient {
+      width: 350px;
+   }
+   #canvas {
+      width: 350px;
+      height: 350px;
+   }
+}
+
+@include _350 {
+   .game-over__title {
+      font-size: 55px;
+      text-shadow: -4px 2px 0.5vw #2356ff;
+   }
+   .game-over__score p {
+      font-size: 30px;
+      text-shadow: -1px 1px 0.4vw #ca006d;
+   }
+   .game-over__res {
+      font-size: 25px;
+   }
+
+   .info__block p {
+      font-size: 25px;
+   }
+   #block-size__inp {
+      font-size: 18px;
+   }
+   .block__btn {
+      font-size: 12px;
+   }
+   .game-score p {
+      font-size: 25px;
+   }
+   .canvas-gradient {
+      width: 300px;
+   }
+   #canvas {
+      width: 300px;
+      height: 300px;
+   }
+   .alert{
+      font-size: 12px;
+   }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="2048 Game created with Js" />
+  <meta name="keywords" content="2048, game, neon, size" />
+  <meta name="author" content="Harutyunyan" />
+  <title>2048</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/icon/site.webmanifest" />
+  <link rel="mask-icon" href="./assets/icon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#9f00a7" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <section>
+    <div id="alert" class="alert">
+      <span id="closebtn" class="closebtn">&times;</span>
+      <strong>Warnings! </strong> board size must be min 2 max 20
+    </div>
+    <div id="game-over" class="game-over">
+      <div id="game-over__title" class="game-over__title">Game Over</div>
+      <div class="game-over__score">
+        <p id="score__result" class=""></p>
+      </div>
+      <div id="restart" class="game-over__res">Restart</div>
+    </div>
+    <div class="game-title">
+      <div class="title__wrapper">
+        <span class="title__text">2048</span>
+        <span class="title__gradient"></span>
+        <div class="title__dodge"></div>
+      </div>
+    </div>
+    <div class="game-info">
+      <div class="info__block">
+        <p id="block-size__title" class="">Size</p>
+        <input id="block-size__inp" type="number" value="4" min="2" max="20" />
+        <button class="block__btn" id="change-size" type="button" value="OK">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          OK
+        </button>
+      </div>
+      <div class="game-score">
+        <p id="score">Score : 0</p>
+      </div>
+    </div>
+    <div id="canvas-block" class="canvas-gradient">
+      <canvas id="canvas" width="450" height="450"></canvas>
+    </div>
+  </section>
+  <script src="./assets/script/2048.js"></script>
+  <script type="text/javascript"></script>
+</body>
+
+</html>
