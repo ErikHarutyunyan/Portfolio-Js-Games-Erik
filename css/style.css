@@ -1,0 +1,1291 @@
+/* ======================================== CSS RESET STYLE ======================================== */
+*{padding:0;margin:0;border:0}*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}:active,:focus{outline:0}a:active,a:focus{outline:0}aside,footer,header,nav{display:block}body,html{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%}button,input,textarea{font-family:inherit}input::-ms-clear{display:none}button{cursor:pointer}button::-moz-focus-inner{padding:0;border:0}a,a:visited{text-decoration:none}a:hover{text-decoration:none}ul li{list-style:none}img{vertical-align:top}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;box-sizing:border-box}
+/* ======================================== INPUT FONTS ======================================== */
+  @font-face {
+    font-family: 'Conv_Cera-Black';
+    src: url('../fonts/Cera-Black.eot');
+    src: url('../fonts/Cera-Black.woff') format('woff'), url('../fonts/Cera-Black.ttf') format('truetype'), url('../fonts/Cera-Black.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Conv_Cera-Bold';
+    src: url('../fonts/Cera-Bold.eot');
+    src: url('../fonts/Cera-Bold.woff') format('woff'), url('../fonts/Cera-Bold.ttf') format('truetype'), url('../fonts/Cera-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Conv_Cera-Light';
+    src: url('../fonts/Cera-Light.eot');
+    src: url('../fonts/Cera-Light.woff') format('woff'), url('../fonts/Cera-Light.ttf') format('truetype'), url('../fonts/Cera-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Conv_Cera-Regular';
+    src: url('../fonts/Cera-Regular.eot');
+    src: url('../fonts/Cera-Regular.woff') format('woff'), url('../fonts/Cera-Regular.ttf') format('truetype'), url('../fonts/Cera-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Conv_Cera-Thin';
+    src: url('../fonts/Cera-Thin.eot');
+    src: url('../fonts/Cera-Thin.woff') format('woff'), url('../fonts/Cera-Thin.ttf') format('truetype'), url('../fonts/Cera-Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/* ======================================== GENERAL STYLE ======================================== */
+  body {
+    color: #ddd;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #ddd;
+    letter-spacing: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #1B1B1B;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #1b1b1b;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #ddd;
+  }
+/* ======================================== HEADER ======================================== */
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+  }
+
+  nav {
+    float: right;
+    margin-top: 5vh;
+  }
+
+  .container {
+    margin: 0px 7vh;
+  }
+
+  .clear::after {
+    content: '';
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+
+  .headering {
+    padding-top: 4vh;
+  }
+
+  .header_log,
+  .header_log a {
+    float: left;
+    font: 6.5vh / 100% Conv_Cera-Bold, sans-serif;
+    word-break: break-all;
+    text-align: center;
+    letter-spacing: 0px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu li {
+    font: 2.4vh / 100% Conv_Cera-Light, sans-serif;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .menu li:nth-child(2) {
+    margin-left: 13vh;
+  }
+
+  .fixed {
+    background: #212121e6;
+    border-bottom: 1px solid #2c2c2c;
+    animation: smoothScroll 1s forwards;
+  }
+  @keyframes smoothScroll {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+/* ======================================== ASIDE ======================================== */
+  aside {
+    position: fixed;
+    top: 70vh;
+    z-index: 90;
+  }
+
+  .social__links ul li a {
+    color: #ababab;
+    font-size: 2.7vh;
+    line-height: 4.8vh;
+  }
+/* ======================================== SECTION HOME ======================================== */
+  .page__home {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background: #454545;
+    background: -webkit-radial-gradient(top left, #454545, #020202);
+    background: -moz-radial-gradient(top left, #454545, #020202);
+    background: radial-gradient(to bottom right, #454545, #020202);
+    overflow: hidden;
+  }
+
+  .info__home {
+    margin-top: 25vh;
+  }
+
+  .info__text-1 {
+    font: 2.7vh / 100% Conv_Cera-Light, sans-serif;
+    margin-left: 42%;
+    letter-spacing: 0.8vh;
+    color: #ababab;
+    display: inline-block;
+  }
+
+  .text-1 p {
+    display: inline-block;
+  }
+
+  .info__text-2 {
+    font: 35vh/ 100% Conv_Cera-Black, sans-serif;
+    display: block;
+    text-align: center;
+  }
+
+  .info__text-3 {
+    font: 2.7vh / 100% Conv_Cera-Light, sans-serif;
+    margin-left: 53%;
+    letter-spacing: 0.3vh;
+    color: #ababab;
+    display: inline-block;
+    line-height: 4vh;
+  }
+/* ======================================== SCROLL ======================================== */
+  .scroll {
+    position: absolute;
+    right: 4vh;
+    z-index: 99;
+    top: calc(100vh - 40vh);
+  }
+
+  .scroll__links {
+  }
+
+  .link {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    transform: rotate(-90deg) translate3d(-100px, 0, 0);
+    transform: rotate(-90deg) translate3d(-15vh, 16vh, 0);
+  }
+
+  .link__arrow {
+    display: inline-flex;
+  }
+
+  .link__arrow span {
+    position: relative;
+    width: 2.2vh;
+    height: 0.4vh;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #151515;
+    z-index: 2;
+  }
+
+  .link__arrow span:nth-child(1) {
+    transform-origin: left bottom;
+    transform: rotate(45deg) translate3d(1.5vh, -1.4vh, 0);
+  }
+
+  .link__arrow span:nth-child(2) {
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+  }
+
+  .link__arrow span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0vh;
+    height: 0.4vh;
+    background: #ababab;
+  }
+
+  .link__line {
+    position: relative;
+    margin-left: -2vh;
+    margin-right: 5vh;
+    width: 14.5vh;
+    height: 0.4vh;
+    background: #151515;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .link__line:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 7vh;
+    width: 8vh;
+    height: 0.4vh;
+    background: #ababab;
+  }
+
+  .link__text {
+    font: 2.3vh / 100% Conv_Cera-Regular, sans-serif;
+    color: #ababab;
+  }
+
+  .link:hover .link__line:after {
+    animation: animation-line 1.5s forwards;
+  }
+
+  .link:hover .link__arrow span:after {
+    animation: animation-arrow 1.5s forwards;
+    animation-delay: 1s;
+  }
+
+  @keyframes animation-line {
+    0% {
+      left: 80px;
+    }
+
+    100% {
+      left: 0;
+    }
+  }
+
+  @keyframes animation-arrow {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+/* ======================================== SECTION PROJECT ======================================== */
+  .page__projects {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background: #454545;
+    background: -webkit-radial-gradient(top, #454545, #020202);
+    background: -moz-radial-gradient(top, #454545, #020202);
+    background: radial-gradient(to bottom, #454545, #020202);
+    overflow: hidden;
+  }
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .swiper-slide {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 48vh;
+    height: 48vh;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #fff6);
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(70%) blur(3px);
+    filter: grayscale(70%) blur(3px);
+    transition: all 0.5s ease;
+  }
+
+  .asd {
+    font: 11.2vh / 100% Conv_Cera-Black, sans-serif;
+    position: absolute;
+    width: 110vh;
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+    letter-spacing: 5px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .swiper-slide-active>.asd,
+  .swiper-slide-active>.qwe,
+  .swiper-slide-active>.button {
+    opacity: 1;
+    transition: all 2.5s ease;
+  }
+
+  .swiper-slide-active>img {
+    -webkit-filter: grayscale(0%) blur(0px);
+    filter: grayscale(0%) blur(0px);
+    transition: all 2s ease;
+  }
+
+  .qwe {
+    font: 2.25vh / 100% Conv_Cera-Thin, sans-serif;
+    position: absolute;
+    width: 120vh;
+    opacity: 0;
+    margin-top: 25%;
+    transition: all 0.5s ease;
+    letter-spacing: 0.05vh;
+    line-height: 3.2vh;
+    text-align: center;
+    text-transform: initial;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .qwe p {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .button {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    opacity: 0;
+    z-index: 99;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .button a {
+    font: 2.4vh / 100% Conv_Cera-Thin, sans-serif;
+    background-color: #18181861;
+    border: none;
+    text-align: center;
+    padding: 2.42vh 8vh;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 99;
+  }
+/* ======================================== SECTION CONTACT ======================================== */
+  textarea.contact-form-text {
+    resize: none;
+    height: 12vh;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: all 5000s ease-in-out 0s;
+    -webkit-transition-property: background-color, color;
+  }
+
+  .page__contact {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background: #454545;
+    background: -webkit-radial-gradient(top right, #454545, #020202);
+    background: -moz-radial-gradient(top right, #454545, #020202);
+    background: radial-gradient(to bottom left, #454545, #020202);
+    overflow: hidden;
+  }
+
+  .contact {
+    width: 95%;
+    display: flex;
+    margin: 8% auto;
+    margin: 15vh auto;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+
+  .contact__info {
+    flex: 0 0 50%;
+  }
+
+  .info {
+    text-align: center;
+    padding: 35px 35px 0px 35px;
+  }
+
+  .info__title,
+  .form__title {
+    font: 4vw / 100% Conv_Cera-Bold, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: context-menu;
+  }
+
+  .info__biograph {
+    font: 2.2vh / 100% Conv_Cera-Thin, sans-serif;
+    letter-spacing: 1px;
+    line-height: 4vh;
+    text-align: justify;
+    text-align-last: center;
+    text-transform: initial;
+    margin-top: 5.6vh;
+  }
+
+  .zxc {
+    margin-top: 40px;
+    margin-top: 6.5vh;
+  }
+
+  .my__info>div:nth-child(1){
+    font: 4vh/ 100% Conv_Cera-Bold, sans-serif;
+  }
+
+  .my__info>div:nth-child(2),
+  .my__info>div:nth-child(2) a {
+    font: 2.2vh / 100% Conv_Cera-Thin, sans-serif;
+    margin: 3.2vh auto;
+    letter-spacing: 2px;
+    text-transform: initial;
+  }
+  /* ======================================== CONTACT FORM ======================================== */
+    .contact__form {
+      flex: 0 0 50%;
+    }
+
+    .form__item {
+      width: 95%;
+      height: 100%;
+      padding: 35px 35px 20px 35px;
+      text-align: center;
+      margin: 0 auto;
+      box-shadow: 2px 5px 8px 0 rgba(0, 0, 0, 0.7), 0px 4px 1px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .contact-form {
+      width: 100%;
+      padding: 10px 10px;
+      padding: 3vh 3vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .contact-form::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #00000038 url(../img/11.gif) center / 200px no-repeat;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease 0s;
+    }
+
+    .contact-form._sending::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .contact-form-text {
+      font: 2.2vh / 100% Conv_Cera-Light, sans-serif;
+      display: block;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 3.5vh 0;
+      border-bottom: 1.5px solid #ddd !important;
+      background: transparent;
+      padding: 1.2vh 0.4vh;
+      outline: 0;
+      color: #ddd;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s;
+      opacity: 0.9;
+    }
+
+    .contact-form-text:focus {
+      -webkit-box-shadow: 0px 0px 7px 2px #ddd;
+      -moz-box-shadow: 0px 0px 7px 2px #ddd;
+      box-shadow: 0px 0px 7px 2px #ddd;
+    }
+
+    .error {
+      box-shadow: 0px 0px 7px 2px #9B1D20;
+      border-bottom: 1.5px solid #9B1D20 !important;
+    }
+
+    .errorMess {
+      font: 15px / 100% Conv_Cera-Thin, sans-serif;
+      color: #ff0006;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #ddd;
+    }
+
+    :-moz-placeholder {
+      color: #ddd;
+    }
+
+    ::-moz-placeholder {
+      color: #ddd;
+    }
+
+    :-ms-input-placeholder {
+      color: #ddd;
+    }
+
+    .contact-form button {
+      font: 2.4vh / 100% Conv_Cera-Thin, sans-serif;
+      background-color: transparent;
+      border: none;
+      color: #ddd;
+      padding: 2.42vh 8vh;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 35px;
+      margin: 4% 0 0 0;
+    }
+
+    .page__contact .scroll {
+      top: calc(100% - 40vh);
+    }
+
+    .page__contact .link {
+      transform: rotate(-270deg) translate3d(14vh, -14vh, 0);
+    }
+  /*.swiper-button {
+    color: #ddd
+  }*/
+/* ======================================== MEDIA CSS ======================================== */
+  /*
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  @media  only screen and (max-width: 1024px) and (min-width: 768px), (max-aspect-ratio: 5/6) {
+    /* ==================== SECTION HOME ==================== */
+      .container {
+        margin: 0px 4vh;
+      }
+
+      .header_log,
+      .header_log a {
+        font-size: 6vh;
+      }
+
+      .menu li {
+        font-size: 2.2vh;
+      }
+
+      .menu li:nth-child(2) {
+        margin-left: 4vh;
+      }
+
+      .info__home {
+        margin-top: 28vh;
+      }
+
+      .info__text-2 {
+        font-size: 23vh;
+      }
+
+      .info__text-1, .info__text-3 {
+        font-size: 1.7vh;
+      }
+
+      .scroll {
+        right: 8vh;
+      }
+
+      .link__arrow span {
+        height: 0.35vh;
+      }
+
+      .link__arrow span:after {
+        width: 0vh;
+        height: 0.3vh;
+      }
+
+      .link__line {
+        margin-left: -2.3vh;
+        margin-right: 2vh;
+        width: 11.5vh;
+        height: 0.35vh;
+      }
+
+      .link__line:after {
+        width: 5vh;
+        height: 0.35vh;
+      }
+
+      .link__text {
+        font-size: 1.7vh;
+      }
+    /* ==================== SECTION PROJECT ==================== */
+      .swiper-slide {
+        width: 350px;
+        height: 350px;
+      }
+
+      .asd {
+        font-size: 4.5rem;
+      }
+
+      .qwe {
+        width: 600px;
+        font-size: 1.1rem;
+        letter-spacing: 0px;
+        line-height: 25px;
+      }
+
+      .button a {
+        font-size: 1.3rem;
+        padding: 20px 60px;
+      }
+    /* ==================== SECTION CONTACT ==================== */
+      .contact {
+        width: 100%;
+        display: inline-block;
+      }
+
+      .info,
+      .form__item {
+        width: 80%;
+        margin: 0px auto;
+      }
+
+      .info__title,
+      .form__title {
+        font-size: 3.1rem;
+      }
+
+      .info__biograph {
+        font-size: 1.2rem;
+        margin-top: 35px;
+        line-height: 25px;
+      }
+
+      .my__info>div:nth-child(1) {
+        font-size: 2rem;
+      }
+
+      .my__info>div:nth-child(2),
+      .my__info>div:nth-child(2) a {
+        font-size: 1.1rem;
+        margin: 20px auto;
+      }
+
+      .contact__form {
+        margin: 5% 0%;
+      }
+
+      .contact-form {
+        padding: 10px 10px;
+      }
+
+      .contact-form-text {
+        font-size: 1.2rem;
+        margin: 25px 0;
+      }
+
+      textarea.contact-form-text {
+        height: 60px;
+      }
+
+      .contact-form button {
+        font-size: 1.3rem;
+        padding: 25px 60px;
+      }
+  }
+  /*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  */
+  @media  only screen and (max-width: 1180px) and (min-width: 768px) and (orientation: landscape) {
+    /* ==================== SECTION HOME ==================== */
+      .link__line {
+        margin-right: 4vh;
+      }
+      .link__text {
+        font-size: 2.1vh;
+      }
+    /* ==================== SECTION PROJECT ==================== */
+      .swiper-slide {
+        width: 300px;
+        height: 300px;
+      }
+
+      .asd {
+        font-size: 4.5rem;
+      }
+
+      .qwe {
+        font-size: 1.1rem;
+      }
+
+      .button a {
+        font-size: 1.1rem;
+        padding: 15px 50px;
+      }
+    /* ==================== SECTION CONTACT ==================== */
+      .contact {
+        width: 100%;
+      }
+
+      .info__title,
+      .form__title {
+        font-size: 3.1rem;
+      }
+
+      .info__biograph {
+        font-size: 1.2rem;
+        line-height: 25px;
+        margin-top: 35px;
+      }
+
+      .zxc {
+        margin-top: 40px;
+      }
+
+      .my__info>div:nth-child(1) {
+        font-size: 2rem;
+      }
+
+      .my__info>div:nth-child(2),
+      .my__info>div:nth-child(2) a {
+        font-size: 1.1rem;
+        margin: 20px auto;
+      }
+
+      .contact__form {
+        margin: 5% 0%;
+      }
+
+      .contact-form {
+        padding: 10px 10px;
+      }
+
+      .contact-form-text {
+        font-size: 1.1rem;
+        margin: 25px 0;
+      }
+
+      textarea.contact-form-text {
+        height: 75px;
+      }
+
+      .contact-form button {
+        font-size: 1.1rem;
+        padding: 15px 50px;
+      }
+  }
+  /*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+  */
+  @media  only screen and (min-width: 480px) and (max-width: 767px) {
+    /* ==================== SECTION HOME ==================== */
+    .container {
+      margin: 0px 5vh;
+    }
+
+    .menu li {
+      font-size: 2.2vh;
+    }
+
+    .menu li:nth-child(2) {
+      margin-left: 1.8rem;
+    }
+
+    .header_log,
+    .header_log a {
+      font-size: 6vh;
+
+    }
+    /* ==================== SECTION PROJECT ==================== */
+    .swiper-slide {
+      width: 200px;
+      height: 200px;
+    }
+
+    .asd {
+      font-size: 3rem;
+    }
+
+    .qwe {
+      width: 500px;
+      font-size: 0.8rem;
+      margin-top: 33%;
+    }
+
+    .button {
+      margin-top: 65%;
+    }
+
+    .button a {
+      font-size: 0.9rem;
+      padding: 15px 30px;
+    }
+  }
+
+  /*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  */
+  @media  only screen and (min-width: 290px) and (max-width: 479px) {
+    /* ==================== SECTION HOME ==================== */
+      .container {
+        margin: 0px 4vh;
+      }
+
+      .header_log,
+      .header_log a {
+        font-size: 5.5vh;
+        width: 8vh;
+      }
+
+      .menu li {
+        font-size: 2.2vh;
+      }
+
+      .menu li:nth-child(2) {
+        margin-left: 4vh;
+      }
+
+      .info__text-1 {
+        font-size: 1.5vh;
+        margin-left: 40%;
+      }
+
+      .info__text-2 {
+        font-size: 20vh;
+      }
+
+      .info__text-3 {
+        font-size: 1.5vh;
+        margin-left: 50%;
+      }
+
+      .scroll {
+        right: 6vh;
+      }
+    /* ==================== SECTION PROJECT ==================== */
+      .swiper-slide {
+        width: 150px;
+        height: 150px;
+      }
+
+      .asd {
+        font-size: 2.3rem;
+      }
+
+      .qwe {
+        width: 75vw;
+        font-size: 0.7rem;
+        margin-top: 50%;
+        line-height: 20px;
+      }
+
+      .button {
+        margin-top: 100%;
+      }
+
+      .button a {
+        font-size: 0.8rem;
+        padding: 15px 18px;
+      }
+    /* ==================== SECTION CONTACT ==================== */
+      .contact {
+        width: 100%;
+        margin-top: 20%;
+        flex-direction: column;
+      }
+
+      .info,
+      .form__item {
+        width: 90%;
+        margin: 0px auto;
+        padding: 35px 15px 0px 30px;
+      }
+
+      .info__title,
+      .form__title {
+        font-size: 2.8rem;
+      }
+
+      .info__biograph {
+        font-size: 1rem;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        margin-top: 35px;
+      }
+
+      .zxc {
+        margin-top: 40px;
+      }
+
+      .my__info>div:nth-child(1) {
+        font-size: 1.5rem;
+      }
+
+      .my__info>div:nth-child(2),
+      .my__info>div:nth-child(2) a {
+        font-size: 1rem;
+        margin: 15px auto;
+      }
+
+      .contact__form {
+        margin: 10% auto;
+      }
+
+      .contact-form {
+        padding: 0px 0px;
+      }
+
+      .contact-form-text {
+        font-size: 1rem;
+        margin: 25px 0;
+      }
+
+      .contact-form button {
+        font-size: 1rem;
+        padding: 15px 40px;
+        margin: 4% 0 10% 0;
+      }
+  }
+    /*  iphone X - 12 Pro Max // landscape */
+  @media only screen and (min-device-width: 319px) and (max-device-width: 1100px) and (orientation:landscape) {
+    .container {
+      margin: 0px 7vh;
+    }
+    /* ==================== SECTION HOME ==================== */
+      .header_log,
+      .header_log a {
+        font-size: 6.5vh;
+      }
+
+      .menu li {
+        font-size: 2.3vh;
+      }
+
+      .menu li:nth-child(2) {
+        margin-left: 13vh;
+      }
+
+      .info__text-1, .info__text-3 {
+        font-size: 2.7vh;
+      }
+
+      .info__text-2 {
+        font-size: 35vh;
+      }
+
+      .scroll {
+          right: 2vh;
+          top: calc(100% - 40vh);
+      }
+
+      .link__arrow span {
+        height: 0.4vh;
+      }
+
+      .link__arrow span:after {
+        width: 0vh;
+        height: 0.4vh;
+      }
+
+      .link__arrow span {
+        height: 0.4vh;
+      }
+
+      .link__line {
+        margin-right: 5vh;
+        margin-left: -2vh;
+        width: 14.5vh;
+        height: 0.4vh;
+      }
+
+      .link__line:after {
+        width: 8vh;
+        height: 0.4vh;
+      }
+
+      .link__text {
+        font-size: 2.3vh;
+      }
+    /* ==================== SECTION PROJECT ==================== */
+      .swiper-slide {
+        width: 48vh;
+        height: 48vh;
+      }
+
+      .asd {
+        font-size: 11.2vh;
+      }
+
+      .qwe {
+        font-size: 2.25vh;
+        width: 120vh;
+        margin-top: 25%;
+        letter-spacing: 0.05vh;
+        line-height: 3.2vh;
+      }
+
+      .button a {
+        font-size: 2.4vh;
+        padding: 3.42vh 8vh;
+      }
+    /* ==================== SECTION CONTACT ==================== */
+      .contact {
+        width: 100%;
+        display: flex;
+      }
+      .info, .form__item {
+        width: 95%;
+        padding: 35px 34px 20px 34px;
+
+      }
+      .info__title, .form__title {
+        font-size: 3.8vw;
+      }
+      .info__biograph {
+        font-size: 2.2vh;
+        line-height: 4vh;
+        margin-top: 5.6vh;
+      }
+      .zxc {
+        margin-top: 40px;
+        margin-top: 6.5vh;
+      }
+      .my__info>div:nth-child(1) {
+          font-size: 4vh;
+      }
+      .my__info>div:nth-child(2), .my__info>div:nth-child(2) a {
+          font-size: 2.2vh;
+          margin: 3.2vh auto;
+      }
+      .contact__form {
+           margin: 5% auto;
+      }
+      .contact-form-text {
+      font-size: 2.2vh;
+      margin: 3.5vh 0;
+      }
+      textarea.contact-form-text{
+        height: 12vh;
+      }
+      .contact-form button {
+      font-size: 2.4vh;
+          padding: 2.42vh 8vh;
+      }
+  }
+  /*
+  ##Device =  iphone X - 12 Pro Max (Portrait)
+  ##Screen = w/h 375px to 1100px
+  */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 1100px) and (orientation : portrait) and (max-aspect-ratio: 3/6) {
+    /* ==================== SECTION HOME ==================== */
+      .header_log,
+      .header_log a {
+        font-size: 4.8vh;
+        width: 6.8vh;
+      }
+
+      .menu li {
+        font-size: 1.8vh;
+      }
+
+      .menu li:nth-child(2) {
+        margin-left: 3vh;
+      }
+
+      .info__text-2 {
+        font-size: 17vh;
+      }
+    /* ==================== SECTION PROJECT ==================== */
+      .swiper-slide {
+        width: 200px;
+        height: 200px;
+      }
+
+      .asd {
+        font-size: 2.8rem;
+      }
+    /* ==================== SECTION CONTACT ==================== */
+     .contact {
+      width: 100%;
+      display: inline-block;
+      margin-top: 30%;
+      }
+  }
+  /*
+  ##Device = Most of the Small Smartphones Mobiles (Portrait)
+  ##Screen = B/w 200px to 289px
+  */
+  @media  only screen and (min-width: 200px) and (max-width: 289px) {
+    /* ==================== SECTION HOME ==================== */
+      .container {
+        margin: 0px 4vh;
+      }
+
+      .header_log,
+      .header_log a {
+        font-size: 5.5vh;
+        width: 8vh;
+      }
+
+      .menu li {
+        font-size: 1.5vh;
+      }
+
+      .menu li:nth-child(2) {
+        margin-left: 2vh;
+      }
+
+      .info__text-1 {
+        font-size: 1.5vh;
+        margin-left: 40%;
+      }
+
+      .info__text-2 {
+        font-size: 16vh;
+      }
+
+      .info__text-3 {
+        font-size: 1.5vh;
+        margin-left: 50%;
+      }
+
+      .scroll {
+        right: 6vh;
+      }
+      .link__text {
+        font-size: 2vh;
+      }
+    /* ==================== SECTION PROJECT ==================== */
+      .swiper-slide {
+        width: 150px;
+        height: 150px;
+      }
+
+      .asd {
+        font-size: 1.5rem;
+      }
+
+      .qwe {
+        width: 80vw;
+        font-size: 0.65rem;
+        margin-top: 60%;
+      }
+
+      .button {
+        margin-top: 120%;
+      }
+
+      .button a {
+        font-size: 0.65rem;
+        padding: 12px 15px;
+      }
+    /* ==================== SECTION CONTACT ==================== */
+      .contact {
+        width: 100%;
+        display: inline-block;
+      }
+
+      .info,
+      .form__item {
+        width: 90%;
+        margin: 0px auto;
+        padding: 35px 10px 0px 15px;
+      }
+
+      .info__title,
+      .form__title {
+        font-size: 1.5rem;
+      }
+
+      .info__biograph {
+        font-size: 0.65rem;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        margin-top: 30px;
+      }
+
+      .zxc {
+        margin-top: 30px;
+      }
+
+      .my__info>div:nth-child(1) {
+        font-size: 1rem;
+      }
+
+      .my__info>div:nth-child(2),
+      .my__info>div:nth-child(2) a {
+        font-size: 0.7rem;
+        margin: 15px auto;
+      }
+
+      .contact__form {
+        margin: 10% 0%;
+      }
+
+      .contact-form {
+        padding: 0px 0px;
+      }
+
+      .contact-form-text {
+        font-size: 0.7rem;
+        margin: 20px 0;
+      }
+
+      .contact-form button {
+        font-size: 0.65rem;
+        padding: 12px 20px;
+        margin: 4% 0 10% 0;
+      }
+  }

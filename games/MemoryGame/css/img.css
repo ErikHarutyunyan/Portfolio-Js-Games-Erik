@@ -1,0 +1,91 @@
+.vic {
+  background: url("../img/back/victori.jpg") no-repeat center center;
+}
+
+.king {
+  background: url("../img/back/king.jpg") no-repeat center center;
+}
+
+.uzi {
+  background: url("../img/back/uzi.png") no-repeat center center;
+}
+
+.shoes {
+  background: url("../img/back/shoes.jpg") no-repeat center center;
+}
+
+.yup {
+  background: url("../img/back/yupiter.jpg") no-repeat center center;
+}
+
+.mask {
+  background: url("../img/back/mask2.jpg") no-repeat center center;
+}
+
+.angel {
+  background: url("../img/back/angel.jpg") no-repeat center center;
+}
+
+.oko {
+  background: url("../img/back/oko.jpg") no-repeat center center;
+}
+
+.shar {
+  background: url("../img/back/shar.jpg") no-repeat center center;
+}
+
+.hand {
+  background: url("../img/back/hand.jpg") no-repeat center center;
+}
+
+.animation {
+  -webkit-animation: fade-out 2s forwards;
+     -moz-animation: fade-out 2s forwards;
+       -o-animation: fade-out 2s forwards;
+          animation: fade-out 2s forwards;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
